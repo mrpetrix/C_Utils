@@ -9,5 +9,7 @@ int    main(void)
     newLine = 10;
     my_putchar(c);
     my_putchar(newLine);
+    my_putstr("Hello World");
+    my_putchar(newLine);
     return(0);
 }
