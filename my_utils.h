@@ -16,6 +16,8 @@ int             my_strcmp(const char *s1, const char *s2);
 int             my_strncmp(const char *s1, const char *s2, unsigned int n);
 char            *my_strcat(char *dest, const char *src);
 char            *my_strncat(char *dest, const char *src, unsigned int n);
+unsigned int    my_strlcat(char *dest, const char *src, unsigned int size);
+char            *my_strstr(char *str, char *to_find);
 
 
 #endif /* MYHEADER_H */
