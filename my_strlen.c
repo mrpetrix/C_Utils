@@ -1,4 +1,4 @@
-int     my_strlen(char *str)
+unsigned int    my_strlen(char *str)
 {
     int result;
 

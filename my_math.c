@@ -1,4 +1,4 @@
-int     my_factorial(int nb)
+unsigned int    my_factorial(int nb)
 {
     if(nb < 0)
         return (0);
@@ -8,7 +8,7 @@ int     my_factorial(int nb)
         return nb * my_factorial(nb - 1);
 }
 
-int     my_power(int nb, int power)
+int             my_power(int nb, int power)
 {
     if (power < 0)
         return (0);
@@ -18,7 +18,7 @@ int     my_power(int nb, int power)
         return (nb * my_power(nb, power - 1));
 }
 
-int     my_sqrt(int nb)
+unsigned int    my_sqrt(int nb)
 {
     int guess;
 
@@ -35,4 +35,9 @@ int     my_sqrt(int nb)
         }
         return (0);
     }
+}
+
+unsigned int    my_is_prime(int nb)
+{
+    return (nb);
 }
