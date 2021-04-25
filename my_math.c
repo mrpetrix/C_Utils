@@ -39,5 +39,20 @@ unsigned int    my_sqrt(int nb)
 
 unsigned int    my_is_prime(int nb)
 {
-    return (nb);
+    int factor;
+
+    factor = 3;
+    if (nb < 2)
+        return (0);
+    else if (nb < 4)
+        return (1);
+    else if (nb % 2 == 0)
+        return (0);
+    while (factor < (nb / 2))
+    {
+        if (nb % factor == 0)
+            return (0);
+        factor += 2;
+    }
+    return (1);
 }
