@@ -18,7 +18,7 @@ int     my_atoi(char *str)
         str++;
     }
 
-    while (*str)
+    while (*str >= 48 && *str <= 57)
     {
         result *= 10;
         result += *str - 48;
